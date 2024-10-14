@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AARAMBh - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Mobile dropdown styles */
+        .dropdown-menu {
+            display: none;
+            background-color: #333;
+            position: absolute;
+            top: 50px; /* Below the header */
+            right: 10px;
+            width: 200px;
+            border-radius: 5px;
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            background-color: #444;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu-icon">
+            <button class="menu-btn" onclick="toggleDropdown()">☰</button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu">
+            <a href="index.html">Home</a>
+            <a href="tournaments.html">Tournaments</a>
+            <a href="rules.html">Rules</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <a href="index.html"><img src="images/Logo.png (2).png" alt="AARAMBh Logo" class="logo"></a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tournaments.html">Tournaments</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="home-section" style="background-image: url('images/Theme.png');">
+        <h1>Welcome to AARAMBH</h1>
+        <p>Play Free Fire Esports and earn amazing cash prizes!</p>
+        <p>Join the action, showcase your skills, and stand a chance to be crowned champion!</p>
+        <button class="view-tournaments" onclick="location.href='tournaments.html'">View Tournaments</button>
+        <div class="notice-board">
+            <h2>Latest Updates:</h2>
+            <ul>
+                <li>New tournament added: Champion's Arena!</li>
+                <li>Registration for Crisis Control is now open!</li>
+                <li>Check our Rules page for updated tournament policies!</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.instagram.com/aarambh_arena.official/" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com/@Aarambh-e8i" target="_blank"><img src="images/youtube.png" alt="YouTube"></a>
+            <p>Contact: 7424971265, 9680995144</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle dropdown for mobile navigation
+        function toggleDropdown() {
+            const dropdown = document.getElementById('dropdown-menu');
+            if (dropdown.style.display === 'block') {
+                dropdown.style.display = 'none';
+            } else {
+                dropdown.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

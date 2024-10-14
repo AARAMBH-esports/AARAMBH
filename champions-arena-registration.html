@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AARAMBh - Champion's Arena Registration</title>
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/Logo.png (2).png" alt="AARAMBh Logo" class="logo"></a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tournaments.html">Tournaments</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <h1>Champion's Arena Registration</h1>ader>
+    <!--section>
+        <form id="registration-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required>
+
+            <label for="uid">UID:</label>
+            <input type="text" id="uid" required>
+
+            <label for="inGameName">In-Game Name:</label>
+            <input type="text" id="inGameName" required>
+
+            <h2>Process Payment</h2>
+            <p>Registration Fee: ₹50</p>
+            <img src="images/QR50.png" alt="QR Code for Payment">
+
+            <label for="screenshot">Upload Payment Screenshot:</label>
+            <input type="file" id="screenshot" accept="image/*" required>
+
+            <button type="submit">Submit Registration</button>
+            <button type="button" onclick="goBack()">Go Back</button>
+        </form>
+    </section-->
+    <section class="registration-form">
+        <h1>Champion's Arena Registration</h1>
+        <form id="registration-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="uid">UID:</label>
+            <input type="text" id="uid" name="uid" required>
+
+            <label for="ingame-name">In-Game Name:</label>
+            <input type="text" id="ingame-name" name="ingame-name" required>
+            <label for="referal-uid">referal-uid:</label>
+            <input type="text" id="referal-uid" name="referal-uid" required>
+
+            <h2>Process Payment</h2>
+            <p>Registration Fee: ₹50</p>
+            <img src="images/QR50.png" alt="QR Code for Payment">
+
+            <label for="screenshot">Upload Payment Screenshot:</label>
+            <input type="file" id="screenshot" name="screenshot" accept="image/*" required>
+
+            <button type="submit" class="register-btn">Submit Registration</button>
+            <button type="button" onclick="goBack()">Go Back</button>
+        </form>
+    </section>
+
+    <script>
+        
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
